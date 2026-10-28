@@ -1,0 +1,6 @@
+{
+  "name": "QuickDex - Pokédex Quick Ball",
+  "description": "Pokédex Web moderna e ultra-rápida inspirada no design da Quick Ball (Azul Ciano e Amarelo), com busca instantânea, tabela de efetividade, golpes, evoluções, status e efeitos sonoros com Web Audio API.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
