@@ -69,6 +69,24 @@ export interface AbilityInfo {
   description: string;
 }
 
+export interface PokemonVariety {
+  id: number;
+  name: string;
+  ptName: string;
+  isDefault: boolean;
+  formType: 'mega' | 'gmax' | 'regional' | 'normal';
+}
+
+export interface EncounterLocation {
+  version: string;
+  versionGroup: string;
+  areaName: string;
+  method: string;
+  chance: number;
+  minLevel: number;
+  maxLevel: number;
+}
+
 export interface PokemonFullDetail extends PokemonSummary {
   genus: string;
   flavorText: string;
@@ -79,6 +97,8 @@ export interface PokemonFullDetail extends PokemonSummary {
   eggGroups: string[];
   captureRate: number;
   growthRate: string;
+  varieties: PokemonVariety[];
+  encounters?: EncounterLocation[];
 }
 
 export interface NatureInfo {
@@ -88,3 +108,4 @@ export interface NatureInfo {
   decreasedStat: string | null;
   description: string;
 }
+
